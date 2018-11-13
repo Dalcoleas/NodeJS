@@ -68,7 +68,7 @@ let app = {
                             fetch('/materia/' + name)
                                 .then(res => res.json())
                                 .then(function (data) {
-                                    document.saveMateria.name.value = data.nombre;
+                                    document.saveMateria.nombre.value = data.nombre;
                                     document.saveMateria.uv.value = data.uv;
                                     document.saveMateria.descripcion.value = data.descripcion;
                                     document.saveMateria.id.value = data._id;

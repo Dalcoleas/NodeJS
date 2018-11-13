@@ -66,7 +66,7 @@ router.post('/update/:id', async (req, res, next)=>{
 
 router.post('/', function(req,res){
     let Materia = new materiaModel({
-        nombre: req.body.name,
+        nombre: req.body.nombre,
         uv: req.body.uv,
         descripcion: req.body.descripcion
     })
